@@ -23,3 +23,15 @@ Projects:
  5.Simon Game (JS / jQuery)
 
  - Learn about how to use jQuery library in JS
+
+ 6.Weather App (JS / Express / OpenWeatherAPI)
+
+ - Learn about how to use API
+ - Learn how to get input from HTML and pass it into JS file
+
+ 7.NewsLetter Signup (JS / Express / MailChimp API / Heroku)
+
+ - Using MailChimp API to receive signup forms
+ - Using Heroku to deploy the whole website
+ 	- Github can only deploy static website
+ Address: https://secure-island-72540.herokuapp.com/
