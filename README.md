@@ -40,3 +40,7 @@ Projects:
  8. Good courses online (CSS Flex layout)
  
  - https://likuny0415.github.io/web-build-1/
+ 
+ 9. Practise page (CSS Grid layout & JS DOM)
+ 
+ -  https://likuny0415.github.io/web-build-2/
