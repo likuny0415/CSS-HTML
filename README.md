@@ -4,9 +4,6 @@
 
 Projects:
 
- 1.Tribute Page (HTML-CSS)
- 
- Live URL: https://likuny0415.github.io/FirstTribute/
  
  2.Survey Form (HTML-CSS)
  
