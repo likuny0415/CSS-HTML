@@ -81,3 +81,51 @@ function addLoadEvent(func) {
 addLoadEvent(prepareGallery)
 addLoadEvent(prepareLinks)
 
+function testDiv() {
+    var testdiv = document.getElementById('testdiv');
+    testdiv.innerHTML = 'Content created by innerHTML'
+}
+
+addLoadEvent(testDiv)
+
+function createChild() {
+    var para = document.createElement('p')
+    var text = document.createTextNode('New node created by createElement')
+    para.appendChild(text)
+    var testdiv = document.getElementById('testdiv')
+    testdiv.appendChild(para)
+}
+
+addLoadEvent(createChild)
+
+// insert a new element after targetElement
+function insertAfter(newElement, targetElemet) {
+    var parent = targetElemet.parentNode;
+    if (parent.lastChild == targetElemet) {
+        parent.appendChild(newElement)
+    } else {
+        parent.insertBefore(newElement,targetElemet.nextSibling)
+    }
+}
+
+
+function appendGallery() {
+    var placeholder = document.createElement('img')
+    placeholder.setAttribute('id', 'placeholder')
+    placeholder.setAttribute('src', 'images/placeholder.png')
+    placeholder.setAttribute('alt', 'my image gallery')
+    var description = document.createElement('p')
+    var text = document.createTextNode('Choose an image')
+    description.appendChild(text)
+
+    var gallery = document.getElementById('gallery')
+    // this function do not need gallery as prefix
+    // just call it
+    insertAfter(placeholder,gallery)
+    
+}
+
+addLoadEvent(appendGallery)
+
+
+
